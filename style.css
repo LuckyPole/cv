@@ -136,11 +136,22 @@ footer {
   justify-content: center;
   align-items: center;
  }
- .navbar {
+ .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #212020;
+  padding: 20px;
+}
+
+.navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #151515;
+  background-color: #212020;
+  color: #eae4e4;
 }
 
 .navbar li {
@@ -151,23 +162,32 @@ footer {
   display: block;
   padding: 10px 20px;
   text-decoration: none;
-  color: #333;
+  color: #ece6e6;
 }
 
-.menu-icon {
+.dropdown .menu-icon {
   display: none;
   position: absolute;
-  background-color: #312f2f;
+  background-color: #f1ebeb;
+  padding: 10px;
 }
 
 .dropdown:hover .menu-icon {
   display: block;
 }
-.menu-icon li a:hover {
-  background-color: #191717;
+
+.menu-icon li {
+  display: inline-block;
+  margin-right: 10px;
 }
-.menu-icon {
-  width: 20px;
-  height: 20px;  
-  transform: scale(0.5);
+
+.menu-icon li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.menu-icon li a img {
+  width: 100%;
+  height: 100%;
 }
